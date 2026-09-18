@@ -13,11 +13,8 @@ export const DemoBanner: React.FC<DemoBannerProps> = ({ onNavigateToCheckout, on
     setRole,
     activeHold,
     holdSecondsRemaining,
-    releaseHold,
-    resetDemoData
+    releaseHold
   } = useApp();
-
-  const [showResetConfirm, setShowResetConfirm] = useState(false);
 
   const formatTime = (totalSeconds: number) => {
     const mins = Math.floor(totalSeconds / 60);
@@ -107,16 +104,6 @@ export const DemoBanner: React.FC<DemoBannerProps> = ({ onNavigateToCheckout, on
               <span>Replay Intro</span>
             </button>
 
-            <button
-              id="reset-demo-button"
-              type="button"
-              onClick={() => setShowResetConfirm(true)}
-              className="inline-flex items-center gap-1 text-[11px] text-slate-300 hover:text-white bg-[#202E23] hover:bg-[#2c3e30] border border-[#2E4233] px-2.5 py-1 rounded-md transition-colors"
-              title="Restore initial mock data"
-            >
-              <RefreshCw className="w-3 h-3 text-amber-400" />
-              <span>Reset Data</span>
-            </button>
           </div>
         </div>
 
@@ -169,47 +156,6 @@ export const DemoBanner: React.FC<DemoBannerProps> = ({ onNavigateToCheckout, on
         )}
       </div>
 
-      {/* Reset Confirmation Modal */}
-      {showResetConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4">
-          <div
-            id="reset-confirm-modal"
-            className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200"
-          >
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
-                <RefreshCw className="w-5 h-5" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-base font-semibold text-slate-900">Reset Demo State?</h3>
-                <p className="text-sm text-slate-600 mt-1">
-                  This will restore all projects, plots, holds, bookings, payments, and site visits to their original clean seed state from MOCK_DATA.json.
-                </p>
-                <div className="mt-5 flex items-center justify-end gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setShowResetConfirm(false)}
-                    className="px-4 py-2 rounded-lg text-sm text-slate-600 hover:bg-slate-100 font-medium"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    id="confirm-reset-btn"
-                    type="button"
-                    onClick={() => {
-                      resetDemoData();
-                      setShowResetConfirm(false);
-                    }}
-                    className="px-4 py-2 rounded-lg text-sm bg-rose-600 hover:bg-rose-700 text-white font-semibold transition-colors"
-                  >
-                    Yes, Reset Demo
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
