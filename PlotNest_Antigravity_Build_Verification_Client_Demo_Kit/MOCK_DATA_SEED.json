@@ -1,0 +1,30 @@
+{
+  "demoRole": "buyer",
+  "tourCompleted": false,
+  "settings": {
+    "holdMinutes": 15,
+    "currency": "INR"
+  },
+  "scenarios": [
+    {
+      "id": "fresh-buyer",
+      "name": "Fresh Buyer",
+      "description": "No active booking; ideal for starting the demo."
+    },
+    {
+      "id": "buyer-booking",
+      "name": "Buyer With Booking",
+      "description": "Buyer already has an active booking and timeline."
+    },
+    {
+      "id": "developer-inventory",
+      "name": "Developer Inventory",
+      "description": "Developer dashboard with active inventory."
+    },
+    {
+      "id": "admin-verification",
+      "name": "Admin Verification Queue",
+      "description": "Admin has one project waiting for review."
+    }
+  ]
+}

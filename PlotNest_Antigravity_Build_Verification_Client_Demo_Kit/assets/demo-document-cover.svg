@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<rect width="900" height="1200" fill="#f5f7f3"/>
+<rect x="90" y="90" width="720" height="1020" rx="22" fill="white" stroke="#d9e0d8" stroke-width="3"/>
+<text x="450" y="210" text-anchor="middle" font-family="Arial" font-size="44" font-weight="800" fill="#152018">PLOTNEST</text>
+<text x="450" y="285" text-anchor="middle" font-family="Arial" font-size="26" fill="#66716A">DEMO DOCUMENT</text>
+<rect x="190" y="350" width="520" height="310" rx="24" fill="#e8f1e8"/>
+<text x="450" y="500" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#14532D">SAMPLE / NOT LEGAL</text>
+<text x="450" y="550" text-anchor="middle" font-family="Arial" font-size="18" fill="#66716A">For product demonstration only</text>
+<text x="450" y="775" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#152018">Green Valley Residency</text>
+<text x="450" y="820" text-anchor="middle" font-family="Arial" font-size="18" fill="#66716A">Project Approval Summary — Demo Copy</text>
+<text x="450" y="1010" text-anchor="middle" font-family="Arial" font-size="15" fill="#66716A">PlotNest Prototype</text>
+</svg>

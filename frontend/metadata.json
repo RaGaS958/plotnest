@@ -1,0 +1,6 @@
+{
+  "name": "PlotNest",
+  "description": "Discover, reserve, and book verified plots and land projects with interactive site-plan inventory, instant holds, and complete booking tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
